@@ -1,0 +1,14 @@
+{
+    "bleu4": 0.27307209372520447,
+    "captions": [
+        {
+            "img_path": "train2017/000000121181.jpg",
+            "hypotheses": "Một nhóm người đàn ông chơi bóng rổ trên sàn.",
+            "references": [
+                "Ba người trong áo xanh chơi game frisbee.",
+                "Ba người chơi Frisbee với khán giả đang nhìn.",
+                "Một nhóm đàn ông đang chơi trò chơi Frisbee cùng nhau. "
+            ]
+        }
+    ]
+}
