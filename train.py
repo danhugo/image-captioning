@@ -22,14 +22,14 @@ def parser_args():
     parser = ArgumentParser()
     parser.add_argument("--batch_size", type=int, default=128, 
                         help="Batch size for dataloader")
-    parser.add_argument("--checkpoint", type=str, default='exp/caps3_freq5_maxlen100_20240627_154825.pt',
+    parser.add_argument("--checkpoint", type=str, default=None,
                         help="path to checkpoint")
     parser.add_argument("--epochs", type=int, default=120,
                         help="number of training epochs")
-    parser.add_argument("--encoder_lr", type=float, default=5e-5)
+    parser.add_argument("--encoder_lr", type=float, default=1e-4)
     parser.add_argument("--data_name", type=str, default="caps3_freq5_maxlen100", 
                         help="Dataset file name according to setting of create_input_files.py")
-    parser.add_argument("--decoder_lr", type=float, default=1e-4)
+    parser.add_argument("--decoder_lr", type=float, default=4e-4)
     parser.add_argument("--wordmap", type=str, default="word_map_freq5",
                         help="word map file name according to setting of create_input_files.py")
     

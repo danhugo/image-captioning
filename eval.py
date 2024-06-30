@@ -212,5 +212,4 @@ def main(args):
 if __name__ == "__main__":
     init_seed(0)
     args = parser_args()
-    main(args)
-    
+    main(args) 

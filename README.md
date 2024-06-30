@@ -3,21 +3,28 @@ This project is to explore RNN and Transformer architectures through the image c
 
 ## Project Overview
 ### Objective
-Detail the main objective of the project.
+The main goal is to comprehend the architecture of the encoder-decoder model based on RNN and transformer networks, as well as the fundamental pipeline in image captioning. Most of the project refer to [this repository](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning/tree/master).
 
 ### Dataset
-Describe the dataset used, its source, and any relevant details.
+The project utilizes the COCO2017 dataset, employing the train/val datasets and annotations available from the provided [link](https://cocodataset.org/#download).
 
 ## Translation and Preprocessing
 ### Translation
-Explain the process of translating captions and the tools used.
+The [Facebook/NLLB-200-Distilled-600M](https://huggingface.co/facebook/nllb-200-distilled-600M) translation model from Hugging Face is employed to translate English into other desired languages. To obtain a dataset with captions in your language, execute the following command:
+```
+python captions_translator.py
+```
 
 ### Data Preprocessing
-Outline the preprocessing steps for the dataset, including any data augmentation or normalization techniques.
+For efficient data loading, image values are stored in `.hdf5` format, and corresponding captions for each image are gathered from the original annotations. To preprocess the data, execute the following command:
+```
+python create_input_files.py
+```
 
 ## Model Architectures
 ### LSTM
-Describe the LSTM architecture used for image captioning.
+Over view of the LSTM-based encoder-decoder model.
+![image](docs/rnn_encoder_decoder.png)
 
 ### Transformer
 Describe the Transformer architecture used for image captioning.
@@ -50,17 +57,9 @@ Explain how to use the trained models for captioning new images.
 ### Comparative Analysis
 Compare the performance of LSTM and Transformer models.
 
-### Challenges
-Discuss any challenges faced during the project.
-
-### Future Work
-Suggest potential improvements or future directions for the project.
 
 ## Contributing
 Provide guidelines for contributing to the project.
-
-## License
-Detail the license under which the project is distributed.
 
 ## Acknowledgements
 Acknowledge any contributors, advisors, or sources of inspiration.
