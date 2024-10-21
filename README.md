@@ -28,7 +28,8 @@ Over view of the LSTM-based encoder-decoder model.
 
 ### Transformer
 `Soon be added`
-
+## Demo
+Demo of captioning model can be seen [here](https://github.com/danhugo/image-captioning/blob/main/notebook.ipynb]).
 ## Training
 ```
 python train.py
